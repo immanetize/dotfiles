@@ -1,0 +1,12 @@
+[user]
+	name = Pete Travis
+	email = immanetize@fedoraproject.org
+	signingkey = 3E8E3D99
+[diff]
+	external = /usr/bin/meld
+[push]
+	default = upstream
+[merge]
+	tool = meld
+[include]
+	path = /home/pete/.git.d/
