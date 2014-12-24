@@ -1,0 +1,15 @@
+Config { font =  "xft:Source Code Pro-11:light"  
+       , bgColor = "#151515"
+       , fgColor = "#E6E6E6"
+       , position = TopW L 90
+       , lowerOnStart = True
+       , commands = [ Run Weather "KMLS" ["-t", "Weather: <tempF>F"] 600
+                    , Run Cpu ["-L", "3", "-H", "50", "--low", "#B1F36F", "--normal", "#AE81FF", "--high", "#AB0000", "-t", "CPU: <total>"] 10
+                    , Run Memory ["-t", "Memory: <usedratio>%"] 10
+                    , Run Date "%a %_d %b %R:%S" "date" 10
+                    , Run StdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "%StdinReader% }{ %cpu% | %memory% | %KMLS% | <fc=#636697>%date%</fc>"
+       }
