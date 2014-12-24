@@ -12,7 +12,7 @@ fi
 #eval $SSH_AGENT
 
 # not everything lives here
-source ~/.private
+source ~/.bash_private
 
 #THAT HISTORY IS MINE, DAMMIT
 unset HISTSIZE 
