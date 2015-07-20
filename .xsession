@@ -12,7 +12,7 @@ xfce4-terminal&
 
 if [[ ${HOSTNAME} == hermes.home.randomuser.org ]]; then 
   # do hermes-specific things
-
+  echo "stuff" &>/dev/null
 
   # stop doing hermes-specific things
 fi
