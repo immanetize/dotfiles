@@ -17,10 +17,13 @@ if [[ ${HOSTNAME} == hermes.home.randomuser.org ]]; then
   # stop doing hermes-specific things
 fi
 
-if [[ ${HOSTNAME} == athena ]]; then
+if [[ ${HOSTNAME} == athena-pete9168.rackspace.corp ]]; then
   # do things just for the work laptop
   evolution &
-
+  xrandr --output eDP1 --primary
+  xrandr --output DP1-2 --right-of eDP1
+  xrandr --output DP1-1 --right-of DP1-2
+  xscreensaver -nosplash
   # stop doing work things
 fi  
 
