@@ -72,6 +72,7 @@ myManageHook = scratchpadManageHook (W.RationalRect 0.25 0.375 0.5 0.35) <+> ( c
                 [[isFullscreen                  --> doFullFloat
 		, className =? "libreoffice-writer" --> doShift "4:doc" 
 		, className =?  "Xmessage" 	--> doCenterFloat 
+    , className =? "Main.py" --> doCenterFloat
 		, className =? "Pcmanfm"	--> doCenterFloat
 		, className =?  "Zenity" 	--> doCenterFloat 
 		, className =? "feh" 		--> doCenterFloat 
