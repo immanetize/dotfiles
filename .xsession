@@ -9,6 +9,8 @@ feh --bg-scale ${background}
 firefox&
 hexchat&
 xfce4-terminal&
+stalonetray&
+guake &
 
 if [[ ${HOSTNAME} == hermes.home.randomuser.org ]]; then 
   # do hermes-specific things
@@ -23,8 +25,11 @@ if [[ ${HOSTNAME} == athena-pete9168.rackspace.corp ]]; then
   xrandr --output eDP1 --primary
   xrandr --output DP1-2 --right-of eDP1
   xrandr --output DP1-1 --right-of DP1-2
-  xscreensaver -nosplash
+  xscreensaver -nosplash &
+  xinput create-master laptop
+  xinput reattach 15 18
   # stop doing work things
+
 fi  
 
 xmonad
