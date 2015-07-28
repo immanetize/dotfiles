@@ -9,12 +9,12 @@ feh --bg-scale ${background}
 firefox&
 hexchat&
 xfce4-terminal&
-stalonetray&
 guake &
 nm-applet &
 if [[ ${HOSTNAME} == hermes.home.randomuser.org ]]; then 
   # do hermes-specific things
   echo "stuff" &>/dev/null
+  stalonetray --geometry 1x1-1340+0 --grow-gravity E -i 24&
 
   # stop doing hermes-specific things
 fi
@@ -27,6 +27,7 @@ if [[ ${HOSTNAME} == athena-pete9168.rackspace.corp ]]; then
   xinput create-master laptop
   xinput reattach "AlpsPS/2 ALPS DualPoint TouchPad" "laptop pointer"
   # stop doing work things
+  stalonetray --geometry 1x1-1340+0 --grow-gravity E -i 24&
 
 fi  
 
