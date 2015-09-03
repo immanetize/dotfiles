@@ -5,9 +5,8 @@ else
   background=/usr/share/backgrounds/default.png
 fi
 feh --bg-scale ${background}
-  
+
 firefox&
-hexchat&
 xfce4-terminal&
 guake &
 nm-applet &
@@ -21,6 +20,7 @@ fi
 
 if [[ ${HOSTNAME} == athena-pete9168.rackspace.corp ]]; then
   # do things just for the work laptop
+  ssh -f util.randomuser.org -L7778:util.randomuser.org:7778 -N
   evolution &
   fix_work_screens
   xscreensaver -nosplash &
@@ -28,9 +28,11 @@ if [[ ${HOSTNAME} == athena-pete9168.rackspace.corp ]]; then
   xinput reattach "AlpsPS/2 ALPS DualPoint TouchPad" "laptop pointer"
   # stop doing work things
   stalonetray --geometry 1x1-1340+0 --grow-gravity E -i 24&
+  pidgin
 
 fi  
 
+hexchat&
 xmonad
 
 
