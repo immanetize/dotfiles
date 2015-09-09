@@ -10,6 +10,10 @@ firefox&
 xfce4-terminal&
 guake &
 nm-applet &
+if [[ ${HOSTNAME} == ruminant.randomuser.org ]]; then 
+  xrandr --output DVI-I-1-1 --left-of HDMI4
+  xrandr --output DVI-I-1-1 --auto
+fi
 if [[ ${HOSTNAME} == hermes.home.randomuser.org ]]; then 
   # do hermes-specific things
   echo "stuff" &>/dev/null
