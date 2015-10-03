@@ -76,16 +76,19 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 1:shell
-bindsym $mod+2 workspace 2:web
-bindsym $mod+3 workspace 3:emacs
-bindsym $mod+4 workspace 4:doc
-bindsym $mod+5 workspace 5:virt
-bindsym $mod+6 workspace 6:chat
-bindsym $mod+7 workspace 7:pg
-bindsym $mod+8 workspace 8:games
-bindsym $mod+9 workspace 9:music
-bindsym $mod+0 workspace 10:scratch
+# this doesn't pop the given workspace over to a different display
+# by default, so we do something hacky
+
+bindsym $mod+1 exec --no-startup-id /usr/bin/python2 ~/.i3/switch_workspaces.py 1:shell
+bindsym $mod+2 exec --no-startup-id /usr/bin/python2 ~/.i3/switch_workspaces.py 2:web
+bindsym $mod+3 exec --no-startup-id /usr/bin/python2 ~/.i3/switch_workspaces.py 3:emacs
+bindsym $mod+4 exec --no-startup-id /usr/bin/python2 ~/.i3/switch_workspaces.py 4:doc
+bindsym $mod+5 exec --no-startup-id /usr/bin/python2 ~/.i3/switch_workspaces.py 5:virt
+bindsym $mod+6 exec --no-startup-id /usr/bin/python2 ~/.i3/switch_workspaces.py 6:chat
+bindsym $mod+7 exec --no-startup-id /usr/bin/python2 ~/.i3/switch_workspaces.py 7:pg
+bindsym $mod+8 exec --no-startup-id /usr/bin/python2 ~/.i3/switch_workspaces.py 8:games
+bindsym $mod+9 exec --no-startup-id /usr/bin/python2 ~/.i3/switch_workspaces.py 9:music
+bindsym $mod+0 exec --no-startup-id /usr/bin/python2 ~/.i3/switch_workspaces.py 10:scratch
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1:shell
