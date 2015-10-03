@@ -8,6 +8,7 @@ font adobe-source-code-pro 8
 #font pango:DejaVu Sans Mono 8
 floating_modifier $mod
 
+# start a terminal
 bindsym $mod+Return exec $term
 
 #set up the environment
@@ -16,9 +17,9 @@ exec dunst
 bar {
         status_command i3status
 }
+
 # kill focused window
 bindsym $mod+Shift+c kill
-# start a terminal
 
 # start dmenu (a program launcher)
 bindsym $mod+p exec dmenu_run
