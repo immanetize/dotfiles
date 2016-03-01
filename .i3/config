@@ -11,7 +11,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec $term
-
+exec feh --bg-scale ~/.backgrounds/electric.png
 #set up the environment
 exec dunst
 
@@ -23,8 +23,8 @@ bar {
 bindsym $mod+Shift+c kill
 
 # start dmenu (a program launcher)
-bindsym $mod+p exec dmenu_run
-#bindsym $mod+p exec --no-startup-id i3-dmenu-desktop
+#bindsym $mod+p exec dmenu_run
+bindsym $mod+p exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+j focus left

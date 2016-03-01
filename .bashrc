@@ -13,7 +13,13 @@ fi
 
 # not everything lives here
 source ~/.bash_private
-
+#if [ -f ~/.ssh/github_id_rsa ] && [ ! -f ~/.vim/bundle/vundle ]; then
+#  mkdir -p ~/.vim/bundle
+#  git clone git@github.com:VundleVim/Vundle.vim.git ~/.vim/bundle/vundle
+#  vim +PluginInstal +qall
+#  vim +BundleUpdate +qall
+#fi
+  
 #THAT HISTORY IS MINE, DAMMIT
 unset HISTSIZE 
 unset HISTFILESIZE

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="color" mtime="1456801754" type="string">
+		<stringvalue>#25f735c229ea</stringvalue>
+	</entry>
+	<entry name="style" mtime="1456801665" type="string">
+		<stringvalue>Source Code Pro Semi-Bold 10</stringvalue>
+	</entry>
+	<entry name="palette_name" mtime="1456808603" type="string">
+		<stringvalue>Novel</stringvalue>
+	</entry>
+	<entry name="palette" mtime="1456808603" type="string">
+		<stringvalue>#000000000000:#CCCC00000000:#000096960000:#D0D06B6B0000:#00000000CCCC:#CCCC0000CCCC:#00008787CCCC:#CCCCCCCCCCCC:#7F7F7F7F7F7F:#CCCC00000000:#000096960000:#D0D06B6B0000:#00000000CCCC:#CCCC0000CCCC:#00008686CBCB:#FFFFFFFFFFFF:#3B3B23232222:#DFDFDBDBC3C3</stringvalue>
+	</entry>
+	<entry name="allow_bold" mtime="1456808603" type="bool" value="true"/>
+</gconf>

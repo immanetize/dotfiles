@@ -1,9 +1,9 @@
 "
 " $HOME/.vimrc -- a configuration file for Vi IMproved
 "
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+"python from powerline.vim import setup as powerline_setup
+"python powerline_setup()
+"python del powerline_setup
 set laststatus=2
 set t_Co=256
 " General settings:
@@ -43,6 +43,7 @@ set nojoinspaces                  " Do not insert a second space after
 " Configure the Vundle plug-in manager:
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
+call vundle#begin()
 
 " Configure bundles:
 Bundle 'gmarik/vundle'
@@ -57,7 +58,7 @@ Bundle 'jhradilek/vim-pressgang'
 Bundle 'jhradilek/vim-rng'
 Bundle 'jhradilek/vim-snippets'
 Bundle 'raichoo/haskell-vim'
-Bundle 'chase/vim-ansible-yaml'
+Plugin 'chase/vim-ansible-yaml'
 Bundle 'PProvost/vim-ps1'
 
 " Enhance the vertical movement over wrapped text:
