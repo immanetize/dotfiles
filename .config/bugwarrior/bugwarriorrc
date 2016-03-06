@@ -1,0 +1,33 @@
+[general]
+targets=my_rhbz
+shorten=True
+
+#[notifications]
+# this gives a python traceback currently
+#notifications = True
+#backend = pynotify
+#only_on_new_tasks = True
+
+[my_rhbz]
+service = bugzilla
+bugzilla.base_uri = bugzilla.redhat.com
+bugzilla.username = me@petetravis.com
+bugzilla.password = @oracle:use_keyring
+bugzilla.ignore_cc = True
+default_priority: M
+add_tags: rhbz
+#project_template: rhbz.{% if any(book in project for book in ['guide', 'fedora-release-notes'])%}docs{% else %}packages{% endif %}.{{project}}
+project_template: rhbz.{% if 'guide' in project%}docs{% elif 'fedora-release-notes' in project%}docs{% else %}packages{% endif %}.{{project}}
+#[my_github]
+# this does not work with the keyring right now
+#service=github
+#github.username = immanetize
+#github.login = immanetize
+#github.password = @oracle:use_keyring
+
+
+
+
+
+
+
