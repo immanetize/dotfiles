@@ -116,3 +116,5 @@ endif
 :let g:ps1_nofold_blocks = 1
 :let g:ps1_nofold_sig = 1
 
+" set vim alias to remove prompt
+cnoreabbrev deprompt s/^\[pete@randomuser.org@ruminant/[fedora/

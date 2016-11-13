@@ -9,4 +9,11 @@
 [merge]
 	tool = meld
 [include]
-	path = /home/pete/.git.d/
+  path = /home/pete/.git.d/
+[bz]
+  browser=firefox3
+  default-tracker=bugzilla.redhat.com
+[bz-tracker "bugzilla.redhat.com"]
+  default-product = Fedora Documentation
+  default-version = rawhide
+
