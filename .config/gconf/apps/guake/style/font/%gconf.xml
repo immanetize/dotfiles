@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <gconf>
-	<entry name="color" mtime="1456801754" type="string">
-		<stringvalue>#25f735c229ea</stringvalue>
+	<entry name="color" mtime="1467641227" type="string">
+		<stringvalue>#0000c087ffff</stringvalue>
 	</entry>
 	<entry name="style" mtime="1456801665" type="string">
 		<stringvalue>Source Code Pro Semi-Bold 10</stringvalue>
 	</entry>
-	<entry name="palette_name" mtime="1457235218" type="string">
-		<stringvalue>Custom</stringvalue>
+	<entry name="palette_name" mtime="1478666191" type="string">
+		<stringvalue>Warm Neon</stringvalue>
 	</entry>
-	<entry name="palette" mtime="1457235218" type="string">
-		<stringvalue>#92bec51eb5c9:#cccc00000000:#000096960000:#d0d06b6b0000:#00000000cccc:#cccc0000cccc:#00008787cccc:#cccccccccccc:#7f7f7f7f7f7f:#cccc00000000:#000096960000:#d0d06b6b0000:#00000000cccc:#cccc0000cccc:#00008686cbcb:#aa9a8875636c:#3b3b23232222:#dfdfdbdbc3c3</stringvalue>
+	<entry name="palette" mtime="1478666191" type="string">
+		<stringvalue>#000000000000:#E2E243434545:#3838B1B13939:#DADAE1E14545:#42426060C5C5:#F8F81F1FFBFB:#2929BABAD3D3:#D0D0B8B8A3A3:#FDFDFCFCFCFC:#E8E86F6F7171:#9B9BC0C08F8F:#DDDDD9D97979:#7A7A9090D5D5:#F6F67474B9B9:#5E5ED1D1E4E4:#D8D8C8C8BBBB:#AFAFDADAB6B6:#3F3F3F3F3F3F</stringvalue>
 	</entry>
-	<entry name="allow_bold" mtime="1457235058" type="bool" value="true"/>
+	<entry name="allow_bold" mtime="1478666191" type="bool" value="true"/>
 </gconf>
