@@ -15,7 +15,7 @@ data.location=~/.task
 
 taskd.server=eos.randomuser.org:6544
 #taskd.credentials=randomuser.org/pete/alabaster
-taskd.certificate=\/home\/pete\/.task\/pete.cert.pem
+taskd.certificate=~/.task/pete.cert.pem
 taskd.key=~/.task/pete.key.pem
 #taskd.trust=strict
 taskd.ca=~/.task/ca.cert.pem
