@@ -38,3 +38,8 @@ export ANSIBLE_HOSTS="/home/pete/ansible-games/ansible_hosts"
 export ANSIBLE_CONFIG="/home/pete/ansible-games/ansible.cfg"
 export BODHI_USER="immanetize"
 export GITHUB_USER="immanetize"
+
+# ssh stuff
+[ -S /run/user/$(id -u)/keyring/ssh ] || gnome-keyring-daemon --replace
+export SSH_AUTH_SOCK="/run/user/$(id -u)/keyring/ssh"
+systemctl --user set-environment SSH_AUTH_SOCK="/run/user/$(id -u)/keyring/ssh"
