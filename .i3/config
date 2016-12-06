@@ -26,7 +26,7 @@ exec nm-applet
 exec feh --bg-scale ~/.backgrounds/preferred_background
 # this one only sets display layout, do other X things somewhere else.
 # eg `ln -s ~/.i3/display/ruminant_triple.sh ~/.i3/preferred_layout -f`
-exec systemd-cat -i xrandr_invocation -p info -- bash -x ~/.i3/preferred_layout
+exec systemd-cat -t xrandr_invocation -p info -- bash -x ~/.i3/preferred_layout
 
 bar {
         status_command i3status
