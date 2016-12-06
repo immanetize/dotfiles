@@ -43,3 +43,6 @@ export GITHUB_USER="immanetize"
 [ -S /run/user/$(id -u)/keyring/ssh ] || gnome-keyring-daemon --replace
 export SSH_AUTH_SOCK="/run/user/$(id -u)/keyring/ssh"
 systemctl --user set-environment SSH_AUTH_SOCK="/run/user/$(id -u)/keyring/ssh"
+
+# aliases
+alias dotfiles="/usr/bin/vcsh dotfiles"
