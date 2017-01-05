@@ -40,7 +40,7 @@ export BODHI_USER="immanetize"
 export GITHUB_USER="immanetize"
 
 # ssh stuff
-[ -S /run/user/$(id -u)/keyring/ssh ] || gnome-keyring-daemon --replace -C /run/user/27001/keyring 
+[ -S /run/user/$(id -u)/keyring/ssh ] || gnome-keyring-daemon --replace -C /run/user/$(id -u)/keyring 
 export SSH_AUTH_SOCK="/run/user/$(id -u)/keyring/ssh"
 systemctl --user set-environment SSH_AUTH_SOCK="/run/user/$(id -u)/keyring/ssh"
 
