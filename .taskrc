@@ -22,6 +22,7 @@ taskd.ca=~/.task/ca.cert.pem
 taskd.credentials=randomuser.org\/pete\/f79653cf-fa17-4498-93b1-37e1c36273af
 
 # Color theme (uncomment one to use)
+include /usr/share/task/solarized-dark-256.theme
 #include /usr/share/doc/task/rc/light-16.theme
 #include /usr/share/doc/task/rc/light-256.theme
 #include /usr/share/doc/task/rc/dark-16.theme
