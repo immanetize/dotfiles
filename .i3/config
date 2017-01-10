@@ -142,6 +142,7 @@ assign [class="Skype"]                6:chat
 assign [class="Pgadmin3"]             7:pg
 
 assign [class="Steam"]                8:games
+assign [class="projectM-pulseaudio"   9:music
 # reload the configuration file
 bindsym $mod+q reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
