@@ -16,7 +16,6 @@ exec dunst
 exec volumeicon
 exec firefox
 exec hexchat
-exec pidgin
 exec guake
 exec gnome-terminal --command "bash -c 'tmux attach || tmux'"
 exec nm-applet
