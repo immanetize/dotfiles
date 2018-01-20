@@ -19,7 +19,7 @@ exec hexchat
 exec guake
 exec gnome-terminal --command "bash -c 'tmux attach || tmux'"
 exec nm-applet
-
+exec virt-manager
 # these things may vary per deployment with symlinks
 # eg `ln -s ~/.backgrounds/electric.png ~/.backgrounds/preferred_background`
 exec feh --bg-scale ~/.backgrounds/preferred_background
