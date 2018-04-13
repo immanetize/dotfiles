@@ -1,6 +1,6 @@
 [user]
 	name = Pete Travis
-	email = immanetize@fedoraproject.org
+	email = pete.travis@rackspace.com
 	signingkey = 3E8E3D99
 [diff]
 	external = /usr/bin/meld
