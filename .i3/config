@@ -17,6 +17,7 @@ exec volumeicon
 exec firefox
 exec hexchat
 exec guake
+exec pasystray
 exec gnome-terminal --command "bash -c 'tmux attach || tmux'"
 exec nm-applet
 exec virt-manager
