@@ -33,7 +33,6 @@ alias check="xmllint --noout --xinclude --postvalid --noent"
 alias moo="xcowsay 'that thing you started is done now'"
 
 # Accountability
-export ANSIBLE_CONFIG="/home/pete/ansible-games/ansible.cfg"
 export BODHI_USER="immanetize"
 export GITHUB_USER="immanetize"
 
