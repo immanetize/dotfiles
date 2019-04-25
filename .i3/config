@@ -14,8 +14,9 @@ bindsym $mod+Return exec $term
 #set up the environment
 exec dunst
 exec volumeicon
+exec mkdir /tmp/cache
 exec firefox
-exec hexchat
+exec slack
 exec guake
 exec pasystray
 exec gnome-terminal --command "bash -c 'tmux attach || tmux'"
@@ -138,6 +139,7 @@ assign [class="Remote-viewer"]        5:virt
 assign [class="Pidgin"]               6:chat
 assign [class="Hexchat"]              6:chat
 assign [class="Skype"]                6:chat
+assign [class="Slack"]                6:chat
 
 assign [class="Pgadmin3"]             7:pg
 
