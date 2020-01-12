@@ -22,12 +22,12 @@ exec pasystray
 exec gnome-terminal --command "bash -c 'tmux attach || tmux'"
 exec nm-applet
 exec virt-manager
+exec systemd-cat -t display_setup -p info -- bash -x ~/.i3/preferred_layout
 # these things may vary per deployment with symlinks
 # eg `ln -s ~/.backgrounds/electric.png ~/.backgrounds/preferred_background`
-exec feh --bg-scale ~/.backgrounds/preferred_background
+exec systemd-cat -t display_setup -p info -- bash -x -c 'sleep .3; feh --bg-scale ~/.backgrounds/preferred_background'
 # this one only sets display layout, do other X things somewhere else.
 # eg `ln -s ~/.i3/display/ruminant_triple.sh ~/.i3/preferred_layout -f`
-exec systemd-cat -t xrandr_invocation -p info -- bash -x ~/.i3/preferred_layout
 
 bar {
         status_command i3status
