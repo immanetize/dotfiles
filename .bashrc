@@ -27,7 +27,7 @@ PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
 # environment stuff
 source /usr/share/doc/git*/contrib/completion/git-prompt.sh
-PS1='[\u@\h`__git_ps1` \W]\$ '
+PS1='($(kubectl config current-context 2>&1 || echo nonoe))[\u@\h`__git_ps1` \W]\$ '
 export EDITOR="/usr/bin/vim"
 alias check="xmllint --noout --xinclude --postvalid --noent"
 alias moo="xcowsay 'that thing you started is done now'"
@@ -37,9 +37,10 @@ export BODHI_USER="immanetize"
 export GITHUB_USER="immanetize"
 
 # ssh stuff
-[ -S /run/user/$(id -u)/keyring/ssh ] || gnome-keyring-daemon --replace -C /run/user/$(id -u)/keyring 
 export SSH_AUTH_SOCK="/run/user/$(id -u)/keyring/ssh"
 systemctl --user set-environment SSH_AUTH_SOCK="/run/user/$(id -u)/keyring/ssh"
 
 # aliases
 alias dotfiles="/usr/bin/vcsh dotfiles"
+alias calicoctl='kubectl -n kube-system exec -it calicoctl -- /calicoctl'
+alias k=kubectl

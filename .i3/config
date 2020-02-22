@@ -12,6 +12,7 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec $term
 #set up the environment
+exec bash -c '[ -S /run/user/$(id -u)/keyring/ssh ] || gnome-keyring-daemon --replace -C /run/user/$(id -u)/keyring'
 exec dunst
 exec volumeicon
 exec mkdir /tmp/cache
