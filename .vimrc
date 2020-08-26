@@ -58,8 +58,10 @@ Bundle 'jhradilek/vim-pressgang'
 Bundle 'jhradilek/vim-rng'
 Bundle 'jhradilek/vim-snippets'
 Bundle 'raichoo/haskell-vim'
+Plugin 'andrewstuart/vim-kubernetes'
 Plugin 'chase/vim-ansible-yaml'
 Bundle 'PProvost/vim-ps1'
+Bundle 'mitsuhiko/vim-jinja'
 
 " Enhance the vertical movement over wrapped text:
 noremap k gk
@@ -79,6 +81,7 @@ au BufNewFile,BufRead *.rng set ft=rng
 au BufNewFile,BufRead *.page set ft=mallard
 au BufNewFile,BufRead *.page.stub set ft=mallard
 au BufNewFile,BufRead *.contentspec set ft=contentspec
+au BufNewFile,BufRead *.j2 set ft=jinja
 au FileType pandoc set ts=4 sw=4 expandtab
 au FileType python set ts=4 sw=4 expandtab
 

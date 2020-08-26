@@ -20,8 +20,9 @@ fi
 #fi
   
 #THAT HISTORY IS MINE, DAMMIT
-unset HISTSIZE 
-unset HISTFILESIZE
+export HISTSIZE=-1
+export HISTFILESIZE=-1
+export HISTTIMEFORMAT="%s"
 shopt -s histappend
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 

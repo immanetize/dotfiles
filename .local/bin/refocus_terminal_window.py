@@ -24,7 +24,7 @@ def window_finder(node, label=None):
 
 if __name__ == "__main__":
        tree = ipc_query(ipc_type='get_tree')
-       tmux_window_id = window_finder(tree, 'attach-session')
+       tmux_window_id = window_finder(tree, 'tmux attach')
        focus_msg = '[con_id="%s"] focus' % tmux_window_id
        rc = ipc_query(focus_msg)
        popen("logger -p info '%s'" % rc)

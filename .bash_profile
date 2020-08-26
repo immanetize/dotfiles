@@ -1,6 +1,4 @@
 # .bash_profile
-unset HISTFILESIZE
-unset HISTSIZE
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
 	. ~/.bashrc

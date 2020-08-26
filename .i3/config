@@ -34,7 +34,7 @@ exec systemd-cat -t display_setup -p info -- bash -x -c 'sleep .3; feh --bg-scal
 bar {
         status_command i3status
 }
-bindsym $mod+l exec i3lock
+bindsym $mod+l exec i3lock -c 000000
 # kill focused window
 bindsym $mod+Shift+c kill
 

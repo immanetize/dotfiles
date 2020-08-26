@@ -1,6 +1,6 @@
 [user]
 	name = Pete Travis
-	email = pete.travis@rackspace.com
+	email = ptravis@groupon.com
 	signingkey = 3E8E3D99
 [diff]
 	external = /usr/bin/meld
